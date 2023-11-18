@@ -5,6 +5,7 @@
 <div style="width: 100%; display: flex; justify-content: center;">
   <img  src="../../assets/react.png" width="600px" caption="Overview">
 </div>
+
 ## Features
 
 - **Simplified Authorization Implementation:** `CanItProvider` makes it easy to add authorization functionality to your React app.
