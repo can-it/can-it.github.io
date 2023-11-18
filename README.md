@@ -18,6 +18,8 @@ We're excited to share that CanIt supports a variety of packages to enhance your
 ## Utilization Packages
 - **[@can-it/ngx](https://www.npmjs.com/package/@can-it/ngx):** Integration package for Angular applications. [Documentation](./packages/ngx/)
 - **[@can-it/react](https://www.npmjs.com/package/@can-it/react):** Integration package for React applications. [Documentation](./packages/react)
+- **@can-it/express**: Integration package for Express applications. (💪 *Comming soon* ⏰)
+- **@can-it/fastify**: Integration package for Fastify applications. (💪 *Comming soon* ⏰)
 
 🚀🚀🚀 **Coming Soon: Full Documentation** 🚀🚀🚀
 
