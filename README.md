@@ -18,8 +18,8 @@ These packages can be used along with the `@can/it-core` package or its Utilizat
 ## Utilization Packages
 - **[@can-it/ngx](https://www.npmjs.com/package/@can-it/ngx):** Integration package for Angular applications. [Documentation](./packages/ngx/)
 - **[@can-it/react](https://www.npmjs.com/package/@can-it/react):** Integration package for React applications. [Documentation](./packages/react)
-- **@can-it/nest**: Integration package for Nestjs applications.  [Documentation](./packages/nest)
-- **@can-it/express**: Integration package for Express applications. (💪 *Coming soon* ⏰)
+- **@can-it/nest**: Integration package for Nestjs applications. [Documentation](./packages/nest)
+- **@can-it/express**: Integration package for Express applications.  [Documentation](./packages/express)
 - **@can-it/fastify**: Integration package for Fastify applications. (💪 *Coming soon* ⏰)
 
 # Full Documentation (coming soon) 🚀🚀🚀
