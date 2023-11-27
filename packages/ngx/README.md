@@ -1,5 +1,7 @@
 # @can-it/ngx (NgxCanIt)
 
+[![npm version](https://img.shields.io/npm/v/@can-it/ngx.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/ngx)
+
 An Angular library that provides an easy and efficient way to implement authorization in your application. With NgxCanIt, you can quickly integrate complex authorization scenarios into your app in just a few minutes.
 
 <div style="width: 100%; display: flex; justify-content: center;">

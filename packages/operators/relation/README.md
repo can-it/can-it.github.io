@@ -1,5 +1,7 @@
 # @can-it/operators-relation
 
+[![npm version](https://img.shields.io/npm/v/@can-it/operators-relation.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/operators-relation)
+
 This package provides a simple way to demonstrate the relationship between two or more codes/values. It is used in conjunction with [@can-it/core](https://www.npmjs.com/package/@can-it/core) or other [packages that utilize the can-it package](https://www.npmjs.com/search?q=keywords%3Acan-it-utilization).
 
 ## Usage

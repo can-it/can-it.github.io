@@ -1,5 +1,7 @@
 # @can-it/react
 
+[![npm version](https://img.shields.io/npm/v/@can-it/react.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/react)
+
 `@can-it/react` is a React library designed to simplify the implementation of authorization in your application. The library provides a straightforward way to integrate complex authorization scenarios into your app within minutes using the `CanItProvider`.
 
 <div style="width: 100%; display: flex; justify-content: center;">
