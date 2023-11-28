@@ -6,6 +6,9 @@ We're excited to share that CanIt supports a variety of packages to enhance your
   <img  src="./assets/overview.png" width="500px" alt="Overview">
 </div>
 
+### Examples
+[👉 Source code](https://github.com/can-it/examples)
+
 ## Core Packages
 - **[@can-it/core](./packages/core/):** This is the core package that forms the foundation of CanIt.
 [![npm version](https://img.shields.io/npm/v/@can-it/core.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/core)
