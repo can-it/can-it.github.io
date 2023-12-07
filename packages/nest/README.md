@@ -128,7 +128,7 @@ pnpm add @can-it/nest
   - Comparators: Both the RI (Resource Identity) and action comparators will use the [@can-it/operators-exact](./packages/operators/exact/) package by default, which provides an exact matching comparator. However, you can also use other comparators available [here](https://www.npmjs.com/search?q=keywords:can-it-operators) by passing them to the `comparators` attribute as shown below.
   - Resolvers: These help you provide RiResolver and PolicyResolver at the module scope, avoiding the repetition of logic in every controller or handler if possible.
 
-```typescript
+  ```typescript
   // ...
 
   const canItConfiguration: CanItConfiguration = {
