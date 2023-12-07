@@ -34,6 +34,8 @@ These packages can be used along with the `@can/it-core` package or its Utilizat
 [![npm version](https://img.shields.io/npm/v/@can-it/react.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/react)
 
 - **[@can-it/nest](./packages/nest)**: Integration package for Nestjs applications.
+[![npm version](https://img.shields.io/npm/v/@can-it/nest.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/nest)
+
 - **[@can-it/express](./packages/express)**: Integration package for Express applications.
 - **@can-it/fastify**: Integration package for Fastify applications. (💪 *Coming soon* ⏰)
 
