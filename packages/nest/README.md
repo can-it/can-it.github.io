@@ -26,7 +26,7 @@ pnpm add @can-it/nest
 
 - `CanItGuard`: Like other guards in Nest, you can use this guard directly at the controller or handler scope. Eventually, you can use it at the global scope by declaring it as a provider in the AppModule.
 
-  ````typescript
+  ```typescript
   @Module({
     // ...
     providers: [
@@ -45,7 +45,7 @@ pnpm add @can-it/nest
 
   > **💡 Recommended:** It is recommended to configure the policy resolver at the module scope using the `CanItModule.configure` method. For other specific use cases, you can define the Policy Resolver at the controller or handler scope.
 
-  ````typescript
+  ```typescript
     @Delete(':id')
     @UsePolicyResolver(
       (context: ExecutionContext, thisModule: ModuleRef): PolicyState => {
@@ -62,7 +62,7 @@ pnpm add @can-it/nest
 
 - `@AllowTo` decorator: This decorator is used to specify the permission needed to access a specific controller or handler.
 
-  ````typescript
+  ```typescript
     @Controller('cats')
     @AllowTo('view', 'cats')
     export class CatsController {
@@ -88,7 +88,7 @@ pnpm add @can-it/nest
 
   > **👉Important:** You can also configure the RI (Resource Identity) resolver at the module scope using the `CanItModule.configure` method.
 
-  ````typescript
+  ```typescript
     // ...
 
     @Get(':id')
@@ -107,14 +107,14 @@ pnpm add @can-it/nest
     // ...
   ```
 
-- `@CanIt` decorator: This decorator helps you get the CanIt instance, which is used to check a request directly in your handler logic.
+- `@CanItService` decorator: This decorator helps you get the CanIt instance, which is used to check a request directly in your handler logic.
 
-  ````typescript
+  ```typescript
     // ...
 
     @Get()
     @AllowTo('view', 'cats')
-    getOne(@CanIt() canIt: CanIt) {
+    getOne(@CanItService() canIt: CanIt) {
       // ...
       const canEditCats = canIt.allowTo('edit', 'cats')
       // ...
