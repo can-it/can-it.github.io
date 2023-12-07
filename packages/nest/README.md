@@ -3,7 +3,7 @@
 The `@can-it/nest` library is a Nest (Nestjs) library that provides an easy and efficient way to implement authorization in your application. With this package, you can quickly integrate complex authorization scenarios into your app in just a few minutes.
 
 <div style="width: 100%; display: flex; justify-content: center;">
-  <img src="../../assets/nest.png" width="500px">
+  <img src="../../assets/nest.png" width="800px">
 </div>
 
 ## Installation
