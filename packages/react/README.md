@@ -71,3 +71,5 @@ pnpm add @can-it/react
       return <CanIt allowTo={['view', 'products']} else="You can NOT view component">You can view products</CanIt>;
     }
     ```
+
+For more details, you can refer to [the example here](https://github.com/can-it/examples/tree/main/apps/react).

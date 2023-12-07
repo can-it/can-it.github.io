@@ -66,3 +66,5 @@ comparator.isAllowed('orgs::any-org-id::users::any-user-id-39485', 'orgs::*::use
 comparator.isAllowed('orgs::any-org-id::products::any-product-id-39485', 'orgs::*::users'); // false
 comparator.isAllowed('orgs::any-org-id::users::any-user-id-39485:products', 'orgs::*::users'); // true
 ```
+
+For more details, you can refer to [the example here](https://github.com/can-it/examples/blob/main/apps/core/src/nested.ts).

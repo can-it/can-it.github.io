@@ -30,3 +30,5 @@ actionComparator.isAllowed('get', 'delete'); // false
 actionComparator.isDenied('get', 'edit'); // false - denying the "edit" action does not necessarily mean denying the "view" action.
 actionComparator.isDenied('edit', 'edit'); // true
 ```
+
+For more details, you can refer to [the example here](https://github.com/can-it/examples/blob/main/apps/core/src/relation.ts).

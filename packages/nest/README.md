@@ -86,7 +86,7 @@ pnpm add @can-it/nest
 
 - `@UseRiResolver` decorator: This decorator helps you generate dynamic RI (Resource Identity) based on the ExecutionContext object for that request.
 
-  > **👉Important:** You can also configure the RI (Resource Identity) resolver at the module scope using the `CanItModule.configure` method.
+> **👉 Important:** You should configure the RI (Resource Identity) resolver at the module scope using the `CanItModule.configure` method to avoid duplicating logic in your application whenever possible.
 
   ```typescript
     // ...
@@ -162,4 +162,4 @@ pnpm add @can-it/nest
 
   ```
 
-For more details, you can refer to [the example here](https://github.com/can-it/examples/blob/main/apps/nest/src/main.ts).
+For more details, you can refer to [the example here](https://github.com/can-it/examples/tree/main/apps/nest).
