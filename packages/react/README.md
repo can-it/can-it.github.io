@@ -39,36 +39,89 @@ pnpm add @can-it/react
 
     export function HomeComponent() {
       return (
-        <CanItProvider>
+        <CanItProvider
+          comparators={{ ri: new ExactComparator(), action: new ExactComparator() }}
+          {/* You can pass it later by using the usePolicyStore hook */}
+          policy={{ allow: [['edit', 'cats']] }}>
+
           <ProductComponent />
         </CanItProvider>
       );
     }
     ```
 
-2. Use the `useCanIt` hook to check whether a specific action can be performed, `usePolicyState` to retrieve the current Policy, and `usePolicyStore` to update the Policy:
+    - By default, the `CanItProvider` will use the compare action and RI in an exact way. If you want to compare it in another way, you can pass it via `CanItProviderProps` `comparators`. You can replace it with our [other can-it-operators here](https://www.npmjs.com/search?q=keywords:can-it-operators).
+    - You also passed the policy state in its props, but it's not required. You can pass it later by using the `usePolicyStore` hook, which is mentioned below.
+
+Then:
+
+- Use the `CanIt` component to choose to display allowed content or not.
 
     ```tsx
-    // some-component.tsx
-    import { usePolicyStore, usePolicyState, useCanIt } from '@can-it/react';
+    // product-component.tsx
+    import { CanIt } from '@can-it/react';
 
     export function ProductComponent() {
-      // using hook to check whether a specific action can perform
-      const isAllowed = useCanIt('edit', 'products');
 
+      return (<CanIt allowTo={['view', 'products']} else="You cannot view the products">
+        You can view products { canEditProducts && 'and edit products also' }.
+      </CanIt>);
+    }
+    ```
+
+- Use the `useCanIt` hook to check whether a specific request can be performed directly in your component.
+
+    ```tsx
+    // product-component.tsx
+    import { useCanIt } from '@can-it/react';
+
+    export function ProductComponent() {
+      // using the hook to check whether a specific action can be performed
+      const canEditProducts = useCanIt('edit', 'products');
+
+      return canEditProducts ? <>You can edit products</> : <>You can not edit products</>
+    }
+    ```
+
+- And you can use `usePolicyStore` to update the policy in your component.
+
+    ```tsx
+    // product-component.tsx
+    import { usePolicyStore } from '@can-it/react';
+
+    export function ProductComponent() {
+      const { update, set } = usePolicyStore();
+
+      useEffect(() => {
+        set({ allow: [['view', 'products']] });
+
+        setTimeout(() => {
+          update(prePolicy => {
+            prePolicy.allow.push(['edit', 'products']);
+
+            return prePolicy;
+          });
+        }, 3000);
+      }, []);
+
+
+      // using the component
+      return <CanIt allowTo={['edit', 'products']} else="You cannot edit products">You can edit products</CanIt>;
+    }
+    ```
+
+- You can also use `usePolicyState` to retrieve the current policy.
+
+    ```tsx
+    // product-component.tsx
+    import { usePolicyState } from '@can-it/react';
+
+    export function ProductComponent() {
       const { policy } = usePolicyState();
 
-      // using hook to update policy
-      const { update, set } = usePolicyStore();
-      // set({ allow: [['view', 'products']] })
-      // update(prePolicy => ({ allow: [['view', 'products']] }))
-
-      if (isAllowed) {
-        return <>You can edit products</>;
-      }
-
-      // using component
-      return <CanIt allowTo={['view', 'products']} else="You can NOT view component">You can view products</CanIt>;
+      return (<CanIt allowTo={['view', 'products']} else="You cannot view the component">
+        You can view products with the current policy {JSON.stringify(policy, null, '  ')}
+      </CanIt>);
     }
     ```
 
