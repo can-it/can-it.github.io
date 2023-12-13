@@ -3,6 +3,9 @@
 This package provides a simple way to define and work with hierarchical relationships between values, typically resources. It is used in conjunction with [@can-it/core](https://www.npmjs.com/package/@can-it/core) or other [can-it utilization packages](https://www.npmjs.com/search?q=keywords%3Acan-it-utilization).
 [![npm version](https://img.shields.io/npm/v/@can-it/operators-nested.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/operators-nested)
 
+### Examples
+[👉 Source code](https://github.com/can-it/examples/blob/main/apps/core/src/nested.ts)
+
 ## Concepts
 The Nested operator is designed to handle nested values. Here are some use cases that illustrate how this concept works:
 
@@ -65,5 +68,3 @@ comparator.isAllowed('orgs::any-org-id::users::any-user-id-39485', 'orgs::*::use
 comparator.isAllowed('orgs::any-org-id::products::any-product-id-39485', 'orgs::*::users'); // false
 comparator.isAllowed('orgs::any-org-id::users::any-user-id-39485:products', 'orgs::*::users'); // true
 ```
-
-For more details, you can refer to [the example here](https://github.com/can-it/examples/blob/main/apps/core/src/nested.ts).

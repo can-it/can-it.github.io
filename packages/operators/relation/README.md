@@ -3,6 +3,9 @@
 This package provides a simple way to demonstrate the relationship between two or more codes/values. It is used in conjunction with [@can-it/core](https://www.npmjs.com/package/@can-it/core) or other [packages that utilize the can-it package](https://www.npmjs.com/search?q=keywords%3Acan-it-utilization).
 [![npm version](https://img.shields.io/npm/v/@can-it/operators-relation.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/operators-relation)
 
+### Examples
+[👉 Source code](https://github.com/can-it/examples/blob/main/apps/core/src/relation.ts).
+
 ## Usage
 
 The `RelationComparator` is an operator provided by the `@can-it/core` package. Take a look at the example code below to understand how it works:
@@ -29,5 +32,3 @@ actionComparator.isAllowed('get', 'delete'); // false
 actionComparator.isDenied('get', 'edit'); // false - denying the "edit" action does not necessarily mean denying the "view" action.
 actionComparator.isDenied('edit', 'edit'); // true
 ```
-
-For more details, you can refer to [the example here](https://github.com/can-it/examples/blob/main/apps/core/src/relation.ts).

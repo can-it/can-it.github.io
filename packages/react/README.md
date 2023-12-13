@@ -7,6 +7,9 @@
   <img  src="../../assets/react.png" width="600px" caption="Overview">
 </div>
 
+### Examples
+[👉 Source code](https://github.com/can-it/examples/tree/main/apps/react)
+
 ## Features
 
 - **Simplified Authorization Implementation:** `CanItProvider` makes it easy to add authorization functionality to your React app.
@@ -124,5 +127,3 @@ Then:
       </CanIt>);
     }
     ```
-
-For more details, you can refer to [the example here](https://github.com/can-it/examples/tree/main/apps/react).

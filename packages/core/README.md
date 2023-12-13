@@ -7,6 +7,10 @@
   <img  src="../../assets/core.png" width="600px" caption="Overview">
 </div>
 
+### Examples
+[👉 Source code](https://github.com/can-it/examples/tree/main/apps/core).
+
+
 ## Installation
 
 You can install the library using npm. Run the following command in your project directory:

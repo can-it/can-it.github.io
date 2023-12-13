@@ -1,6 +1,6 @@
 # CanIt
 
-We're excited to share that CanIt supports a variety of packages to enhance your experience. Here are the core packages and utilities currently available:
+Enhance your experience in implementing the authorization in your javascript/typescript projects.
 
 <div style="width: 100%; display: flex; justify-content: center;">
   <img  src="./assets/overview.png" width="500px" alt="Overview">

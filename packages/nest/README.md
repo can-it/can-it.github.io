@@ -6,6 +6,9 @@ The `@can-it/nest` is a Nest (Nestjs) library that provides an easy and efficien
   <img src="../../assets/nest.png" width="800px">
 </div>
 
+### Examples
+[👉 Source code](https://github.com/can-it/examples/tree/main/apps/nest).
+
 ## Installation
 
 To install this package, you can use npm, yarn, or pnpm. Run one of the following commands in your project directory:
@@ -161,5 +164,3 @@ pnpm add @can-it/nest
   export class AppModule {}
 
   ```
-
-For more details, you can refer to [the example here](https://github.com/can-it/examples/tree/main/apps/nest).

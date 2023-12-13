@@ -7,6 +7,9 @@ An Angular library that provides an easy and efficient way to implement authoriz
   <img src="../../assets/ngx.png" width="500px">
 </div>
 
+### Examples
+[👉 Source code](https://github.com/can-it/examples/tree/main/apps/ngx).
+
 ## Features
 
 - Simplified authorization implementation: NgxCanIt simplifies the process of adding authorization functionality to your Angular app with the provided `CanItPipe`, `CanItDirective`, etc..
@@ -116,5 +119,3 @@ export class ProductsComponent {
   }
 }
 ```
-
-For more details, you can refer to [the example here](https://github.com/can-it/examples/tree/main/apps/ngx).
