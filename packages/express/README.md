@@ -1,4 +1,4 @@
-# @can-it/nest
+# @can-it/express
 
 An Express (Expressjs) library that provides an easy and efficient way to implement authorization in your application. With this package, you can quickly integrate complex authorization scenarios into your app in just a few minutes.
 
