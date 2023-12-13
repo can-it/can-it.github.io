@@ -5,7 +5,7 @@
 `@can-it/core` is an npm library that provides functionality for handling access control and permission checks based on actions and resource identification.
 
 <div style="width: 100%; display: flex; justify-content: center;">
-  <img  src="../../assets/core.png" width="200px" caption="Overview">
+  <img  src="../../assets/core.png" width="600px" caption="Overview">
 </div>
 
 ## Installation
