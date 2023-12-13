@@ -1,8 +1,6 @@
 # @can-it/nest
 
-[![npm version](https://img.shields.io/npm/v/@can-it/ngx.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/nest)
-
-The `@can-it/nest` library is a Nest (Nestjs) library that provides an easy and efficient way to implement authorization in your application. With this package, you can quickly integrate complex authorization scenarios into your app in just a few minutes.
+The `@can-it/nest` is a Nest (Nestjs) library that provides an easy and efficient way to implement authorization in your application. With this package, you can quickly integrate complex authorization scenarios into your app in just a few minutes. [![npm version](https://img.shields.io/npm/v/@can-it/ngx.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/nest)
 
 <div style="width: 100%; display: flex; justify-content: center;">
   <img src="../../assets/nest.png" width="800px">
