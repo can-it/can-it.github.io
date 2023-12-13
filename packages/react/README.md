@@ -1,8 +1,7 @@
 # @can-it/react
 
-[![npm version](https://img.shields.io/npm/v/@can-it/react.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/react)
-
 `@can-it/react` is a React library designed to simplify the implementation of authorization in your application. The library provides a straightforward way to integrate complex authorization scenarios into your app within minutes using the `CanItProvider`.
+[![npm version](https://img.shields.io/npm/v/@can-it/react.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/react)
 
 <div style="width: 100%; display: flex; justify-content: center;">
   <img  src="../../assets/react.png" width="600px" caption="Overview">
@@ -95,6 +94,7 @@ Then:
       useEffect(() => {
         set({ allow: [['view', 'products']] });
 
+        // update the policy state after 3 seconds
         setTimeout(() => {
           update(prePolicy => {
             prePolicy.allow.push(['edit', 'products']);
