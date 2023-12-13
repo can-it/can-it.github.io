@@ -1,8 +1,7 @@
 # @can-it/core
 
+`@can-it/core` provides functionality for handling access control and permission checks based on actions and resource identification.
 [![npm version](https://img.shields.io/npm/v/@can-it/core.svg?style=flat-square)](https://www.npmjs.org/package/@can-it/core)
-
-`@can-it/core` is an npm library that provides functionality for handling access control and permission checks based on actions and resource identification.
 
 <div style="width: 100%; display: flex; justify-content: center;">
   <img  src="../../assets/core.png" width="600px" caption="Overview">
