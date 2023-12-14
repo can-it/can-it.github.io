@@ -83,7 +83,7 @@ export class AppComponent implements OnInit {
 3. Implement authorization logic in your component using the `canIt` pipe, `*canIt` directive, or `CanItService`:
 
 ```typescript
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CanItService } from '@can-it/ngx';
 
 @Component({
@@ -108,13 +108,12 @@ import { CanItService } from '@can-it/ngx';
     </button>
   `,
 })
-export class ProductsComponent {
+export class ProductsComponent implements OnInit {
   constructor(private canItService: CanItService) {}
 
-  // Check user permissions
-  canViewUsers() {
+  ngOnInit() {
     // using CanItService
-    return this.canItService.can(['view', 'users']);
+    const canViewUser = this.canItService.allowTo('view', 'users');
     // ...
   }
 }
